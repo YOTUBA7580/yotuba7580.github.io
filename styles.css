@@ -1,0 +1,81 @@
+/* Font and General Styling */
+body {
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Hiragino Sans', '	Yu Gothic', 'Meiryo', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light and Dark Themes */
+:root {
+    --main-bg-color: #000000; /* Dark Theme */
+    --main-text-color: #ffffff;
+    --alt-bg-color: #f2f2f7; /* Light Theme */
+    --alt-text-color: #000000;
+}
+
+body.dark-theme {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+body.light-theme {
+    background-color: var(--alt-bg-color);
+    color: var(--alt-text-color);
+}
+
+/* Layout */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.about, .social {
+    margin: 20px 0;
+}
+
+.social_links_text {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.welcome_text {
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+/* Theme Toggle Button (Top Right) */
+.theme-toggle, .lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.lang-switch {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Social Media Links */
+.social a {
+    text-decoration: none;
+    color: #0000EE;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}

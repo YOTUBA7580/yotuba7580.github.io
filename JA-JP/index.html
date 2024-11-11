@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yotuba777のウェブページ</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" onclick="toggleTheme()">テーマを切り替え</button>
+        <!-- Language Switch Links -->
+        <!--  <a href="../EN-GB/index.html" class="lang-switch">English</a>  -->
+        <section class="welcome_text">
+            <h2>ようこそ</h2>
+        </section>
+        <!-- About Me Section -->
+        <section class="about">
+            <h2>yotuba777のウェブページ</h2>
+        </section>
+
+        <!-- Social Media Links -->
+        <section class="social">
+            <section class="social_links_text">
+                <h2>SNSのリンク</h2>
+            </section>
+            <a href="https://t.ly/5z0P6" target="_blank">Twitterメイン垢</a>
+            <a href="https://t.ly/jLB20" target="_blank">Twitter鍵垢</a>
+            <a href="https://t.ly/XABeP" target="_blank">Blueskyメイン垢</a>
+            <br><br>
+            <a href="hinan'akashu.html" target="_blank">避難垢集</a>
+        </section>
+    </div>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('light-theme');
+        }
+    </script>
+</body>
+</html>
