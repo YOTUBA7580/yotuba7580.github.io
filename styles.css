@@ -37,16 +37,17 @@ h1, h2 {
 
 .about, .social {
     margin: 20px 0;
+    font-size: 1rem;
 }
 
-.social_links_text {
+.head_text {
     margin: 20px 0;
     font-size: 2rem;
 }
 
 .welcome_text {
     margin: 20px 0;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
 }
 
 /* Theme Toggle Button (Top Right) */
