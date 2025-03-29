@@ -77,6 +77,8 @@ body {
 .fourzerofour h1 {
     font-size: 40vw; /* Takes the larger of 70% width or 80% height */
     margin: 0;
+    text-align: center;
+    align-items: center;
 }
 @media (max-aspect-ratio: 1/1) {
     .logo {
