@@ -90,5 +90,6 @@ body {
     .logo {
         text-align: left;
         width: auto;
+        right: 10px;
     }
 }
