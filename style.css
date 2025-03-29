@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    padding-top: 40px; /* ヘッダーの高さ分余白を確保 */
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.logo img {
+    height: 35px;
+}
+.logo h1 {
+    font-size: 24px;
+}
+.menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.menu {
+    position: fixed;
+    top: 60px;
+    right: -250px;
+    width: 250px;
+    height: calc(100% - 60px);
+    background: black;
+    transition: right 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.menu.open {
+    right: 0;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    padding: 15px 0;
+    visibility: hidden;
+}
+.menu.open ul li {
+    visibility: visible;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.centre_ultrabig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Viewport height */
+    text-align: center;
+}
+.centre_ultrabig h1 {
+    font-size: max(40vw, 40vh); /* Takes the larger of 70% width or 80% height */
+    margin: 0;
+}
+@media (max-aspect-ratio: 1/1) {
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (min-aspect-ratio: 1/1) {
+    .logo {
+        text-align: left;
+        width: auto;
+    }
+}
