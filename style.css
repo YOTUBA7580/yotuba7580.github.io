@@ -75,7 +75,7 @@ body {
     text-overflow: ellipsis; /* 溢れた部分を省略記号にする */
 }
 .fourzerofour h1 {
-    font-size: max(40vw, 40vh); /* Takes the larger of 70% width or 80% height */
+    font-size: 40vw; /* Takes the larger of 70% width or 80% height */
     margin: 0;
 }
 @media (max-aspect-ratio: 1/1) {
