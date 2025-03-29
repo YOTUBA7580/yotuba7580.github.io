@@ -23,6 +23,8 @@ body {
 }
 .logo h1 {
     font-size: 24px;
+    color: white;
+    text-decoration: none;
 }
 .menu-button {
     font-size: 24px;
@@ -67,8 +69,12 @@ body {
     align-items: center;
     height: calc(100vh - 60px); /* Viewport height */
     text-align: center;
+    font-size: 4vw; /* Viewport width を基準にフォントサイズを設定 */
+    white-space: nowrap; /* 改行を防ぐ */
+    overflow: hidden; /* はみ出した部分を隠す */
+    text-overflow: ellipsis; /* 溢れた部分を省略記号にする */
 }
-.centre_ultrabig h1 {
+.fourzerofour h1 {
     font-size: max(40vw, 40vh); /* Takes the larger of 70% width or 80% height */
     margin: 0;
 }
