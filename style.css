@@ -69,17 +69,22 @@ body {
     align-items: center;
     height: calc(100vh - 60px); /* Viewport height */
     text-align: center;
+    font-size: clamp(0.4rem, 4vw, 3rem);
+    white-space: nowrap; /* 改行を防ぐ */
+    overflow: hidden; /* はみ出した部分を隠す */
+    text-overflow: ellipsis; /* 溢れた部分を省略記号にする */
+}
+.fourzerofour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Viewport height */
+    text-align: center;
     font-size: clamp(2.667rem, 0.192rem + 24.74vw, 18.75rem);
     white-space: nowrap; /* 改行を防ぐ */
     overflow: hidden; /* はみ出した部分を隠す */
     text-overflow: ellipsis; /* 溢れた部分を省略記号にする */
 }
-/*.fourzerofour h1 {
-    font-size: 40vw;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-}*/
 @media (max-aspect-ratio: 1/1) {
     .logo {
         text-align: center;
