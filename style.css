@@ -74,12 +74,12 @@ body {
     overflow: hidden; /* はみ出した部分を隠す */
     text-overflow: ellipsis; /* 溢れた部分を省略記号にする */
 }
-.fourzerofour h1 {
-    font-size: 40vw; /* Takes the larger of 70% width or 80% height */
+/*.fourzerofour h1 {
+    font-size: 40vw;
     margin: 0;
     text-align: center;
     align-items: center;
-}
+}*/
 @media (max-aspect-ratio: 1/1) {
     .logo {
         text-align: center;
