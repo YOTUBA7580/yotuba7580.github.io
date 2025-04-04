@@ -31,18 +31,6 @@ body {
     cursor: pointer;
     margin-right: 20px;
 }
-.menu {
-    position: fixed;
-    top: 60px;
-    right: -250px;
-    width: 250px;
-    height: calc(100% - 60px);
-    background: black;
-    transition: right 0.3s;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
 .menu.open {
     right: 0;
 }
@@ -90,10 +78,34 @@ body {
         text-align: center;
         width: 100%;
     }
+    .menu {
+        position: fixed;
+        top: 60px;
+        right: -100vw;
+        width: 100vw;
+        height: calc(100% - 60px);
+        background: black;
+        transition: right 0.3s;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
 }
 @media (min-aspect-ratio: 1/1) {
     .logo {
         text-align: left;
         width: auto;
+    }
+    .menu {
+        position: fixed;
+        top: 60px;
+        right: -250px;
+        width: 250px;
+        height: calc(100% - 60px);
+        background: black;
+        transition: right 0.3s;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 }
