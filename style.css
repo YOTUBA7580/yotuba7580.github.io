@@ -76,7 +76,7 @@ body {
 @media (max-aspect-ratio: 1/1) {
     .logo {
         text-align: center;
-        width: auto;
+        width: 100vw;
     }
     .menu {
         position: fixed;
