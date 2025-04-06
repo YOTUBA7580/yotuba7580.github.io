@@ -78,6 +78,7 @@ body {
         margin-left: calc(50vw - 143.356px);
     }
     .logo a {
+        position: fixed;
         height: 40px;
         text-align: center;
         width: auto;
@@ -102,6 +103,7 @@ body {
         margin-left: 16px;
     }
     .logo a {
+        position: fixed;
         height: 40px;
         text-align: left;
         width: auto;
