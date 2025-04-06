@@ -2,7 +2,6 @@
   margin: 1;
   padding: 1;
   box-sizing: border-box;
-  position: fixed;
 }
 body {
     margin: 1;
@@ -74,6 +73,7 @@ body {
 }
 @media (max-aspect-ratio: 1/1) {
     .logo {
+        position: fixed;
         height: 40px;
         margin-left: calc(50vw - 143.356px);
     }
@@ -97,6 +97,7 @@ body {
 }
 @media (min-aspect-ratio: 1/1) {
     .logo {
+        position: fixed;
         height: 40px;
         margin-left: 16px;
     }
