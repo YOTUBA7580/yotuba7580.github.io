@@ -1,12 +1,14 @@
+* {
+  margin: 1;
+  padding: 1;
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #111;
     color: white;
     padding-top: 40px;
-}
-element.style {
-    margin: 1px;
 }
 .header {
     position: fixed;
