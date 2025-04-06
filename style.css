@@ -60,7 +60,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px - 60px);
+    height: calc(100vh - 40px - 60px);
     text-align: center;
     font-size: clamp(0.4rem, 4vw, 3rem);
     white-space: nowrap;
@@ -95,6 +95,7 @@ body {
         text-align: left;
         width: auto;
         margin-left: 16px;
+        height: 40px;
     }
     .menu {
         position: fixed;
