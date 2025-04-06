@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #111;
     color: white;
+    padding-top: 40px;
 }
 .header {
     position: fixed;
@@ -15,7 +16,8 @@ body {
     left: 0;
     width: 100%;
     background: black;
-    padding: 1px;
+    margin: 1;
+    padding: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +73,9 @@ body {
     font-size: 32px;
 }
 @media (max-aspect-ratio: 1/1) {
+    .logo {
+        height: 40px;
+    }
     .logo h1 {
         text-align: center;
         width: auto;
@@ -90,11 +95,13 @@ body {
     }
 }
 @media (min-aspect-ratio: 1/1) {
+    .logo {
+        height: 40px;
+    }
     .logo h1 {
         text-align: left;
         width: auto;
         margin-left: 16px;
-        height: 40px;
     }
     .menu {
         position: fixed;
