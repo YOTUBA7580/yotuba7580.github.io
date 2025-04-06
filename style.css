@@ -5,6 +5,9 @@ body {
     color: white;
     padding-top: 40px;
 }
+element.style {
+    margin: 1px;
+}
 .header {
     position: fixed;
     top: 0;
@@ -67,7 +70,7 @@ body {
     font-size: 32px;
 }
 @media (max-aspect-ratio: 1/1) {
-    .logo {
+    .logo h1 {
         text-align: center;
         width: auto;
         margin-left: calc(50vw - 143.356px);
@@ -86,7 +89,7 @@ body {
     }
 }
 @media (min-aspect-ratio: 1/1) {
-    .logo {
+    .logo h1 {
         text-align: left;
         width: auto;
         margin-left: 16px;
