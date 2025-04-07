@@ -40,6 +40,10 @@ body {
     cursor: pointer;
     margin-left: calc(100vw - 41.563px);
 }
+.menu-button p {
+    margin: -2px;
+    height: 42px;
+}
 .menu.open {
     right: 0;
 }
