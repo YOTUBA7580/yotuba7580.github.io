@@ -39,6 +39,7 @@ body {
     font-size: 30px;
     cursor: pointer;
     margin-left: calc(100vw - 41.563px);
+    height: 42px;
 }
 .menu-button p {
     margin: -2px;
