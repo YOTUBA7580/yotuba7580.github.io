@@ -87,7 +87,7 @@ body {
     }
     .menu {
         position: fixed;
-        top: 42px;
+        top: 40px;
         right: -100vw;
         width: 100vw;
         height: calc(100% - 60px);
@@ -112,7 +112,7 @@ body {
     }
     .menu {
         position: fixed;
-        top: 42px;
+        top: 40px;
         right: -250px;
         width: 250px;
         height: calc(100% - 60px);
