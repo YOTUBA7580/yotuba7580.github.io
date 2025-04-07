@@ -3,11 +3,13 @@
   padding: 1;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #111;
   color: white;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -20,6 +22,7 @@ body {
   z-index: 1000;
   height: 42px;
 }
+
 .logo {
   position: fixed;
   height: 40px;
@@ -38,6 +41,7 @@ body {
   height: 42px;
   width: auto;
 }
+
 .menu-button {
   font-size: 30px;
   cursor: pointer;
@@ -48,6 +52,7 @@ body {
   margin: -2px;
   height: 42px;
 }
+
 .menu {
   position: fixed;
   top: 40px;
@@ -56,9 +61,11 @@ body {
   padding: 20px;
   overflow: hidden;
 }
+
 .menu.open {
   right: 0;
 }
+
 .menu ul {
   list-style: none;
   padding: 0;
@@ -66,62 +73,21 @@ body {
 }
 .menu ul li {
   height: 50px;
+  visibility: hidden;
+}
+.menu.open ul li {
+  visibility: visible;
 }
 .menu ul li a {
-  display: flex !important;
-  align-items: center !important;
+  display: flex;
+  align-items: center;
   color: white;
   text-decoration: none;
   font-size: 26px;
   height: 50px;
-  width: calc(100vw - 42px);
+  width: calc(100vw - 40px);
 }
-/**/
-.block-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.block {
-  background-color: #1c1c1e;
-  color: #fff;
-  margin: 0;
-  border: none;
-}
-.block a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-}
-.block a p {
-  padding-left: 10px;
-}
-.block.A {
-  border-radius: 10px 10px 0 0;
-}
-.block.B {
-  border-radius: 0;
-}
-.block.C {
-  border-radius: 0 0 10px 10px;
-}
-.block.D {
-  border-radius: 10px;
-}
-.block.A + .block.B,
-.block.B + .block.B,
-.block.B + .block.C,
-.block.A + .block.C {
-  border-top: 2px solid #3d3c41;
-}
-.block.A + .block.D,
-.block.B + .block.D,
-.block.C + .block.D,
-.block.C + .block.A,
-.block.D + .block.A {
-  margin-top: 10px;
-}
-/**/
+
 .homepageyotuba {
   display: flex;
   justify-content: center;
@@ -133,11 +99,14 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .index_version p {
   height: 40px;
   font-size: 32px;
 }
-@media (max-aspect-ratio: 1/1) { /*mobile*/
+
+/* メディアクエリの共通部分をまとめ、差分だけ記述 */
+@media (max-aspect-ratio: 1/1) {
   .logo {
     margin-left: calc(50vw - 94.27px);
   }
@@ -151,7 +120,8 @@ body {
     height: calc(100% - 60px);
   }
 }
-@media (min-aspect-ratio: 1/1) { /*wide*/
+
+@media (min-aspect-ratio: 1/1) {
   .logo {
     margin-left: 16px;
   }
