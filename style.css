@@ -15,8 +15,8 @@ body {
     left: 0;
     width: 100%;
     background: black;
-    margin: 1;
-    padding: 1;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
