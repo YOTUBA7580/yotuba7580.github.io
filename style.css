@@ -54,16 +54,18 @@ body {
     margin: 0;
 }
 .menu ul li {
-    padding: 15px 0;
+    height: 50px;
     visibility: hidden;
 }
 .menu.open ul li {
     visibility: visible;
 }
 .menu ul li a {
+    display: -webkit-box;
     color: white;
     text-decoration: none;
     font-size: 18px;
+    width: calc(100vw - 40px);
 }
 .homepageyotuba {
     display: flex;
